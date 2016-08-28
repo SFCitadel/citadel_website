@@ -1,9 +1,8 @@
 window.onload = function(){
 
 
-
+	// getting the cookie
 	function getCookie(cname) {
-		console.log("running getCookie");
 	    var name = cname + "=";
 	    var ca = document.cookie.split(';');
 	    for(var i = 0; i < ca.length; i++) {
@@ -12,15 +11,15 @@ window.onload = function(){
 	            c = c.substring(1);
 	        }
 	        if (c.indexOf(name) == 0) {
-	            return c.substring(name.length, c.length);
+	        	var foo = c.substring(name.length, c.length);
+	            return foo;
 	        }
 	    }
 	    return "";
 	}
-
+	//checking to see if the right cookie exists
 	var checkCookie = function(){
-		console.log("running check check check cookie");
-		var is18 = getCookie("eighteen=true");
+		var is18 = getCookie("eighteen");
 	 	if(!is18){
 	 		 $("#eighteen-modal").modal("show");
  		}
@@ -28,10 +27,9 @@ window.onload = function(){
 
 	checkCookie();
 
-	console.log("kinky shit!!")
-
+	// Sets a cookie for the page
+	// if the person says they're 18
 	$( "#over-18" ).click(function() {
-	  console.log("Setting a cookie");
-	  document.cookie = "eighteen=true";
+	  document.cookie = "eighteen=true;";
 	});
 }
