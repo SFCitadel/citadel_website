@@ -12,3 +12,8 @@ body{
 	height: 200px;
 	background-image: url(http://hackingdistributed.com/images/2014-01-01-bitcoin/chain3.jpg);
 }
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+		 width: 70%;
+		 margin: auto;
+ }
