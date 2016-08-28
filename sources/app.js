@@ -32,4 +32,8 @@ window.onload = function(){
 	$( "#over-18" ).click(function() {
 	  document.cookie = "eighteen=true;";
 	});
-}
+	$('#more').click(function () {
+		$('#bit').toggleClass('expanded');
+		return false;
+	});
+};
