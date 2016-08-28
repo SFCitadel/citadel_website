@@ -7,6 +7,8 @@
 	<script language="javascript" type="text/javascript" src="app.js"></script>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- Main CSS File -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -14,6 +16,29 @@
 	<title>Citadel San Francisco</title>
 </head>
 <body>
+	<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+        <h4 class="modal-title" id="myModalLabel">I am over 18</h4>
+      </div>
+      <div class="modal-body">
+        This website pertains to kink, BDSM and sexuality. Please certify that you are over 18 years old to enter.
+      </div>
+      <div class="modal-footer">
+        <button onClick="setCookie" type="button" class="btn btn-primary" data-dismiss="modal">I am over 18</button>
+        <a href="https://www.google.com/search?q=puppies&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj7gPiT5uTOAhUUImMKHQV0DTMQ_AUICCgB&biw=1440&bih=801"><button  type="button" class="btn btn-default">Escape!</button><a/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
@@ -24,30 +49,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Citadel</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li><a href="../navbar/">Home</a></li>
+            <li class="active"><a href="./">Visit<span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Calendar</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,6 +65,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 about-section">
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 				<h1>About</h1>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
