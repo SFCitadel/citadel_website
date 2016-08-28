@@ -18,9 +18,20 @@ body{
 }
  .carousel-inner > .item > img,
  .carousel-inner > .item > a > img {
-		 width: 70%;
+	 	height: 450px;
+		 width: auto;
 		 margin: auto;
- }
+}
+#bit {
+  height: 25vh;
+  overflow-y: hidden;
+  transition: height 0.25s;
+}
+
+#bit.expanded {
+  height: auto;
+}
+
 
 #top-logo{
 	height: 100px;
