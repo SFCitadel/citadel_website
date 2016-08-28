@@ -1,6 +1,5 @@
 window.onload = function(){
 
-
 	// getting the cookie
 	function getCookie(cname) {
 	    var name = cname + "=";
@@ -22,8 +21,11 @@ window.onload = function(){
 		var is18 = getCookie("eighteen");
 	 	if(!is18){
 	 		 $("#eighteen-modal").modal("show");
- 		}
+ 		}else{
+			$("#allContent").show();
+		}
 	}
+
 
 	checkCookie();
 
@@ -31,5 +33,6 @@ window.onload = function(){
 	// if the person says they're 18
 	$( "#over-18" ).click(function() {
 	  document.cookie = "eighteen=true;";
+		$("#allContent").show();
 	});
 }
