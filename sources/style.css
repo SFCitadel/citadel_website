@@ -16,3 +16,29 @@ body{
 		 width: 70%;
 		 margin: auto;
  }
+
+#top-logo{
+	height: 100px;
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+@media(min-width:768px){
+	.navbar{
+		margin-bottom: 0px;
+		min-height: 130px !important;
+	}
+	.navbar .navbar-collapse .collapse{
+		height: 130px !important;
+	}
+	.navbar-default .navbar-nav>li>a{
+		line-height:100px;
+	}
+}
+
+@media(max-width:767px){
+	#top-logo{
+		margin-top: -7px;
+		height: 35px;
+	}
+}
