@@ -25,23 +25,20 @@ body{
 		 width: auto;
 		 margin: auto;
 }
-#bit0 {
-  height: 25vh;
-  overflow-y: hidden;
-  transition: height 0.25s;
-}
 
-#bit0.expanded {
-  height: auto;
-}
-#bit1 {
-  height: 25vh;
+.bit {
+	max-height: 25vh;
   overflow-y: hidden;
-  transition: height 0.25s;
+  transition: max-height 1s;
+	-webkit-transition: max-height 1s;
 }
-
-#bit1.expanded {
-  height: auto;
+.more{
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: -10px;
+}
+.bit.expanded {
+  max-height: 2000px;
 }
 
 #top-logo{
