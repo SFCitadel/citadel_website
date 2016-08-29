@@ -71,7 +71,7 @@ body{
 .ug-arrow-left.ug-skin-default {
     background-image: url('img/arrows-left.png');
 
-
+}
 /* responsive */
 @media(min-width:768px){
 	.navbar{
