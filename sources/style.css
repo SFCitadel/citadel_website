@@ -7,9 +7,12 @@ body{
 	color: black;
 	padding: 50px;
 }
-.photo-banner{
-	height: 200px;
-	background-image: url(http://hackingdistributed.com/images/2014-01-01-bitcoin/chain3.jpg);
+
+.dungeon-this-way{
+	height: 500px;
+	background-image:url('img/selectedPhotos/IMG_3571.jpg');
+	background-size: 100%;
+	background-position: 50% 50%;
 }
 .splash-photo{
 	background-image: url('img/selectedPhotos/IMG_3544.jpg');
@@ -47,6 +50,14 @@ body{
 .navbar{
 	margin-bottom: 0px !important;
 }
+
+
+#footer{
+	background-image:url("img/selectedPhotos/IMG_3441.jpg") ;
+	background-size: 100%;
+}
+
+/* responsive */
 @media(min-width:768px){
 	.navbar{
 		margin-bottom: 0px;
