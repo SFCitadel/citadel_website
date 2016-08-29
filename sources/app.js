@@ -23,7 +23,7 @@ window.onload = function(){
 	 	if(!is18){
 	 		 $("#eighteen-modal").modal("show");
  		}
-	}
+	};
 
 	checkCookie();
 
@@ -32,8 +32,12 @@ window.onload = function(){
 	$( "#over-18" ).click(function() {
 	  document.cookie = "eighteen=true;";
 	});
-	$('#more').click(function () {
-		$('#bit').toggleClass('expanded');
+	$('#more0').click(function () {
+		$('#bit0').toggleClass('expanded');
+		return false;
+	});
+	$('#more1').click(function () {
+		$('#bit1').toggleClass('expanded');
 		return false;
 	});
 };

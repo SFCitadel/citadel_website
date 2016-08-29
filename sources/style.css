@@ -22,16 +22,24 @@ body{
 		 width: auto;
 		 margin: auto;
 }
-#bit {
+#bit0 {
   height: 25vh;
   overflow-y: hidden;
   transition: height 0.25s;
 }
 
-#bit.expanded {
+#bit0.expanded {
   height: auto;
 }
+#bit1 {
+  height: 25vh;
+  overflow-y: hidden;
+  transition: height 0.25s;
+}
 
+#bit1.expanded {
+  height: auto;
+}
 
 #top-logo{
 	height: 100px;
