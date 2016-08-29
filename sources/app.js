@@ -36,4 +36,10 @@ window.onload = function(){
 		$('#bit').toggleClass('expanded');
 		return false;
 	});
+
+	$("#gallery").unitegallery({
+		slider_control_zoom: false,
+		gallery_height: 400,
+		theme_enable_text_panel: false
+	});
 };

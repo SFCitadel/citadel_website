@@ -53,3 +53,17 @@ body{
 		height: 35px;
 	}
 }
+
+#gallery {
+	max-width: 100% !important;
+    width: 100% !important;
+    /*height: 300px;*/
+}
+
+.ug-arrow-right.ug-skin-default {
+    background-image: url('img/arrows-right.png');
+}
+
+.ug-arrow-left.ug-skin-default {
+    background-image: url('img/arrows-left.png');
+}
