@@ -10,12 +10,12 @@ body{
 
 .dungeon-this-way{
 	height: 500px;
-	background-image:url('img/selectedPhotos/IMG_3571.jpg');
+	background-image:url('img/selectedPhotos/IMG_3571.JPG');
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 .splash-photo{
-	background-image: url('img/selectedPhotos/IMG_3544.jpg');
+	background-image: url('img/selectedPhotos/IMG_3544.JPG');
 	background-size: 100%;
 	height: 90vh;
 }
@@ -50,7 +50,7 @@ body{
 
 
 #footer{
-	background-image:url("img/selectedPhotos/IMG_3441.jpg") ;
+	background-image:url("img/selectedPhotos/IMG_3441.JPG") ;
 	background-size: 100%;
 }
 
